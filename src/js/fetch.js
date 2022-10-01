@@ -31,13 +31,13 @@ const fetchImages = async (page, searchInput, parent) => {
           cards += 1;
 
           const params = ({
-            webformatURL,
-            tags,
-            likes,
-            views,
-            comments,
-            downloads,
-            largeImageURL,
+            const webformatURL,
+            const tags,
+            const likes,
+            const views,
+            const comments,
+            const downloads,
+            const largeImageURL,
           } = hit);
 
           images.push(markup(params));
