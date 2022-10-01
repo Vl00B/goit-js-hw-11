@@ -30,15 +30,25 @@ const fetchImages = async (page, searchInput, parent) => {
         for (const hit of data) {
           cards += 1;
 
-          const params = ({
-            webformatURL,
-            tags,
-            likes,
-            views,
-            comments,
-            downloads,
-            largeImageURL,
-          } = hit);
+          // const params = ({
+          //   webformatURL,
+          //   tags,
+          //   likes,
+          //   views,
+          //   comments,
+          //   downloads,
+          //   largeImageURL,
+          // } = hit);
+
+          const params = {
+            webformatURL: hit.webformatURL,
+            tags: hit.tags,
+            likes: hit.likes,
+            views: hit.views,
+            comments: hit.comments,
+            downloads: hit.downloads,
+            largeImageURL: hit.largeImageURL,
+          };
 
           images.push(markup(params));
         }
