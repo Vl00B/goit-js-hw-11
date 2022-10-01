@@ -27,7 +27,7 @@ const fetchImages = async (page, searchInput, parent) => {
 
         return;
       } else {
-        for (hit of data) {
+        for (const hit of data) {
           cards += 1;
 
           const params = ({
