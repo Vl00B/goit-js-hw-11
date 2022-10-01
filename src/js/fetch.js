@@ -44,8 +44,6 @@ const fetchImages = async (page, searchInput, parent) => {
         }
 
         if (cards < 40) {
-          _searchSuccess(hitCounter, cards);
-
           _limit();
         } else {
           _searchSuccess(hitCounter, cards);
