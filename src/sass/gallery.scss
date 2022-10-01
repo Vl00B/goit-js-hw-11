@@ -1,0 +1,37 @@
+$min: 420px;
+$mid: 768px;
+$max: 1440px;
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.gallery-item {
+  display: block;
+
+  height: auto;
+  margin: 0 0 15px 0;
+
+  & img {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: $min) {
+    width: 150px;
+  }
+
+  @media screen and (min-width: $min) {
+    width: 60%;
+  }
+
+  @media screen and (min-width: $mid) {
+    width: 35%;
+  }
+
+  @media screen and (min-width: $max) {
+    width: 24%;
+  }
+}
